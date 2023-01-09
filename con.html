@@ -1,0 +1,165 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideDown("slow");
+  });
+});
+
+</script> 
+  <style>
+body, html {
+background-color: #cc9696;
+  height: 100%;
+  margin: 0;
+  font: 30 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+ 
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+.bgimg-1 {
+  background-image: url(https://cdn.mos.cms.futurecdn.net/ux4NQjEVtRFbcxiFzPUkDP.jpg);
+  height: 50%;
+  width:100%;
+ 
+}
+ 
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  backgroung-color: white;
+}
+.caption span.border {
+  background-color:#a17373;
+  color: white;
+  padding: 10px;
+  font-size: 50px;
+  letter-spacing: 5px;
+}
+#navbar {
+  overflow: hidden;
+  background-color: #ffe7e7;
+  padding: 10
+  px 10px; /* Large padding which will shrink on scroll (using JS) */
+  transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+  position: fixed; /* Sticky/fixed navbar */
+  width: 100%;
+  top: 0; /* At the top */
+  z-index: 99;
+}
+ 
+/* Style the navbar links */
+#navbar a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+ 
+/* Style the logo */
+#navbar #logo {
+  font-size: 35px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+ 
+/* Links on mouse-over */
+#navbar a:hover {
+  background-color: #ffe7e7;
+  color: black;
+}
+ 
+/* Style the active/current link */
+#navbar a.active {
+  background-color: #ffe7e7;
+  color: #ffe7e7;
+}
+ 
+/* Display some links to the right */
+#navbar-right {
+  float: right;
+}
+ 
+/* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
+@media screen and (-width: 40px) {
+  #navbar {
+    padding: 20px 10px !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
+  }
+  #navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #navbar-right {
+    float: none;
+  }
+}
+
+img{
+width:250px;
+ padding-top: 0px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 100px
+}
+ h1{
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 0px;
+  padding-left: 100px;
+  }
+ 
+</style>
+<body>
+    <div class="bgimg-1">
+  <div class="caption">
+    <span class="border">Advocate and Awareness</span><br>
+  </div>
+</div>
+<div id="navbar">
+  <a href="https://lh5.googleusercontent.com/K5z1TBso9G5a7dQzt-1QMnIRTaczR5cKm8hrBKk4WHpNuGWKNazYFwlfoP1y9Xzdhq-QPHRToSGUr9hWy8DE4nYapsaygYA2JFMpm3y5VnpnCqEA_2kPuw8GLjp01gTL_LjA4h9Iz0Bbo_Niuz1g6fxd-DaNCAd_znuU12HRcPEUZYtVKOKxDCZp_LQ0dA=w1600-h722" id="logo"></a>
+  <div id="navbar-right">
+    <a class="" href="sexed.html">SEX ED</a>
+    <a href="#contact">CONTRACEPTIVE</a>
+    <a href="teenage.html">Teenage pregancy</a>
+  </div>
+</div>
+<p>There are a lot of contraception to use and they were develop to prevent pregnancy and reduce the risk of getting STI. But it is very confusing so it's no surprise that theres people having unprotected intercourse , and it's estimated that 40% of those people get pregnant and an estimate of 1m get STIs being caught worldwide
+</p>
+<div id="flip">Click to see Contraceptive methods</div>
+<div id="panel"><a href=patch.html>Contraceptive Patch</a>
+<a href=pill.html>Pill</a>
+<a href=vaginal.html>Vagianl ring</a>
+<a href=ius.html>IUS</a>
+<a href=diaphragms.html>Diaphragms</a>
+<a href=condom.html>Condom</a></div>
+<script>
+  // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").style.padding = "30px 10px";
+    document.getElementById("logo").style.fontSize = "25px";
+  } else {
+    document.getElementById("navbar").style.padding = "80px 10px";
+    document.getElementById("logo").style.fontSize = "35px";
+  }
+  
+  </script>
+  </body>
