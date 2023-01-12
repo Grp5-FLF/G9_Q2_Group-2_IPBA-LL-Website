@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+ <style>
+body, html {
+background-color: #cc9696;
+  height: 100%;
+  margin: 0;
+  font-size:15px;
+  color: #777;
+}
+ 
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+ 
+}
+.bgimg-1 {
+  background-image: url(https://cdn.mos.cms.futurecdn.net/ux4NQjEVtRFbcxiFzPUkDP.jpg);
+  height: 100%;
+  width: 100%;
+ 
+}
+ 
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  backgroung-color: white;
+font-family: 'Prata', serif;
+}
+.caption span.border {
+  background-color:#a17373;
+  opacity: 0.85;
+  color: white;
+  padding: 10px;
+  font-size: 50px;
+  letter-spacing: 3px;
+font-family: 'Prata', serif;
+}
+#navbar {
+  font-family: 'Aleo', sans-serif;
+  overflow: hidden;
+  background-color: #ffe7e7;
+  padding: 10
+  px 10px; /* Large padding which will shrink on scroll (using JS) */
+  transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+  position: fixed; /* Sticky/fixed navbar */
+  width: 100%;
+  top: 0; /* At the top */
+  z-index: 99;
+}
+ 
+/* Style the navbar links */
+#navbar a {
+  font-family: 'Aleo', sans-serif;
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 35px;
+  border-radius: 4px;
+}
+ 
+/* Links on mouse-over */
+#navbar a:hover {
+  font-family: 'Aleo', san-serif;
+  background-color: #ffe7e7;
+  color: black;
+}
+ 
+/* Style the active/current link */
+#navbar a.active {
+  background-color: #ffe7e7;
+  color: #ffe7e7;
+}
+ 
+/* Display some links to the right */
+#navbar-right {
+  float: right;
+}
+ 
+/* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
+@media screen and (-width: 40px) {
+  #navbar {
+    padding: 20px 10px !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
+  }
+  #navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #navbar-right {
+    float: none;
+  }
+}
+
+
+img{
+width: 40px;
+ padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px
+   }
+   h1{
+  font-family: 'Aleo', sans-serif;
+
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  }
+  h2{
+  padding-top: 0px;
+  padding-right: 30px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  }
+  p{
+  font-size: 18px;
+  padding-top: 0px;
+  padding-right: 30px;
+  padding-bottom: 0px;
+  padding-left: 30px;
+  }
+</style>
+<body>
+ <div class="bgimg-1">
+  <div class="caption">
+    <span class="border">Advocate and Awareness</span><br>
+  </div>
+</div>
+<div id="navbar">
+  <div class="logo"><a href="sexed.html"><img src="https://i.ibb.co/fFNH1q7/logo1-modified.png" alt="A&A Logo" height="40" width="40" border="0"></a></div>
+  <div id="navbar-right">
+    <a class="" href="sexed.html">Homeㅤ|</a>
+    <a href="brand.html">Brand</a>
+    <a href="con.html">Advocate</a>
+    <a href="teenage.html">Awareness</a>    
+    <a href="resources.html">Resources</a>
+  </div>
+</div>
+
+
+  
+  <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About our brand : </h6>
+            <p class="text-justify">Our brand is designed for people who are lacking in knowledge about safe intercourse or sex education because nowadays, we witness teenager like us that experience teenage pregnancy. Our objective for our service is to raise awareness and advocate the safe and right procedures on to people - not only for those who fell victim but also to the rest of the masses.
+<br><br></p>
+            <p>Hence, comes the name 
+ <i><b>“Advocate & Awareness”</b></i></p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6></h6>
+            <div >
+            <ul class="footer-links">
+              <li><img src="data:image/jpeg;base64,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" alt="sex-education photo" border="0"style="width:140%"></a></li>
+              
+            </ul></div>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+           
+</footer>
+
+<div class="container">
+  <br>
+   <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"><h2>Goals/Objective :</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+        <div class="panel-body"><h4>As we have stated our goal is advocating and educating the people in order for them to have the right knowledge about safe intercourse, as well as raising awareness on the dangers and wrong practices that could lead to unfortunate outcomes. Avoiding those types of occurrences to happen, securing their future.
+</h4>
+</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"><h2>Service :
+</a>
+        </h4>
+      </div>
+      
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body"><h4>We have made a YouTube channel to teach and provide understanding/comprehension about sex education. Aimed primarily to teenagers,
+<br>The content we will produce will help raise awareness and advocate on how to properly handle the concept of sex education.
+<br><br><br>
+          Here is our Intro video and the link to our Youtube Channel. It would be really helpful to us if came you checked it out!</h4><br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cLCc4k9arFw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br>
+<a href="https://www.youtube.com/@advocateandawarenessservices"><img src="https://i.ibb.co/fFNH1q7/logo1-modified.png" alt="A&A Logo" border="0"style="width:180%"class="rightImage"></a></div></div></div>
+          <br>
+      
+      <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3"><h2>Target Audience</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse in">
+        <div class="panel-body"><h4>Primaraly teenagers like us
+</h4>
+
+</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse4"><h2>Brand Tagline</h2>
+</a>
+        </h4>
+      </div>
+      
+      <div id="collapse4" class="panel-collapse collapse">
+        <div class="panel-body"><h4>"Safe intercourse for a secure life"</h4>
+
+</div>
+      </div>
+    </div>
+      
+      
+  <br>
+  <h2 style="color:#212121;"><center>Logo Design</center></h2>
+<style>
+      * {
+        box-sizing: border-box
+      }
+      body {
+        font-family: Verdana, sans-serif;
+        margin: 0
+      }
+      .mySlides {
+        display: none
+      }
+      img {
+        vertical-align: middle;
+      }
+      .slideshow-container {
+        max-width: 600px;
+        position: relative;
+        margin: auto;
+      }
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      /* Caption text */
+      .text {
+        color: #ffffff;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #ffffff;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #999999;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      .active,
+      .dot:hover {
+        background-color: #111111;
+      }
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      @-webkit-keyframes fade {
+        from {
+          opacity: .4
+        }
+        to {
+          opacity: 1
+        }
+      }
+      @keyframes fade {
+        from {
+          opacity: .4
+        }
+        to {
+          opacity: 1
+        }
+      }
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .prev,
+        .next,
+        .text {
+          font-size: 11px
+        }
+      }
+    </style>
+  </head>
+    
+  <body>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="https://i.ibb.co/MPSTJyX/logo1.png" alt="logo1" border="0"style="width:80%"></a>
+        <div class="text">Digital Logo Design</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="https://i.ibb.co/168tkzW/logo2.jpg" alt="logo2" border="0"style="width:80%">
+        <div class="text">Designed logo Poster (1)</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+       <img src="https://i.ibb.co/FBzRc4q/logo3.jpg" alt="logo3" border="0"style="width:80%">
+        <div class="text">Designed logo Poster (2)</div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if(n > slides.length) {
+          slideIndex = 1
+        }
+        if(n < 1) {
+          slideIndex = slides.length
+        }
+        for(i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for(i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+    <br>
+     <h4><center><b>(Photo carousel about the created Logo Poster)</b><br><br>
+“ADVOCATE & AWARENESS” on the outer side, forming a semi-circle.<br>
+A^2 [A-squared] representing our brand name ‘A2’ - Advocate & Awareness. <br>Which is surrounded by a magnifying glass representing the ‘discovery’ aspect to it, <br>as well as ‘investigating deeper into the topic of sex education’.
+
+       </center></h4>
+       
+       
+       
+          
+          <br>
+          <br><br><br>
+</body>
+
